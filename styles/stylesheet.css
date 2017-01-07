@@ -4,6 +4,7 @@ body {
     padding: 0;
     background: #00abc7;
     font-family: 'Neucha', cursive;
+    
 }
 
 h1 {
@@ -18,7 +19,6 @@ h1 {
 
 .wrapper {
     max-width: 1280px;
-/*    max-width: 90%;*/
     min-width: 480px;
     margin: 0 auto;
     padding: 0 26px;  
@@ -181,7 +181,7 @@ header {
     overflow: auto;
     background: white;
     color:#4d4729;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 
@@ -200,7 +200,6 @@ header {
 .title {
     height: 140px;
     text-align: center;
-    vertical-align: center;
 }
 
 .title:before {
@@ -224,6 +223,14 @@ header {
 
 .hide {
     display: none;
+}
+
+i {
+    color: #fefefe;
+}
+
+i: hover {
+    color: #381213;
 }
 
 /*
