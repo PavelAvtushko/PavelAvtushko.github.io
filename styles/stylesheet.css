@@ -42,7 +42,7 @@ h1 {
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    font-size: 22px;
+    font-size: 1.5em;
     line-height: 100%;
     padding: 6px;
     margin-left: 20px;
@@ -176,30 +176,27 @@ header {
 }
 
 .description {
-    height: 200px;
+    height: 150px;
     padding: 3px;
     overflow: auto;
     background: white;
     color:#4d4729;
-    font-size: 22px;
 }
-
 
 .date, .views, .author, .description {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 100%;
-}
-
-.author {
-    height: 30px;
+    font-size: 1em;
 }
 
 .title {
-    height: 140px;
+    height: 90px;
     text-align: center;
+    margin: 0 0 5px 0;
+    overflow: hidden;
 }
 
 .title:before {
@@ -213,7 +210,7 @@ header {
     width: 100%;
     vertical-align: middle;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1em;
     color: #fefefe;
 }
 
@@ -231,4 +228,10 @@ i {
 
 i:hover {
     color: #381213;
+}
+
+.warning {
+    font-size: 20px;
+    color: white;
+    margin:15px;
 }
