@@ -172,7 +172,7 @@ header {
     width: 100%;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border: 2px solid #4d4729;
+    border: 2px solid #e4002f;
 }
 
 .description {
@@ -189,7 +189,7 @@ header {
     -ms-user-select: none;
     margin-top: 10px;
     width: 100%;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .title {
@@ -211,7 +211,7 @@ header {
     vertical-align: middle;
     text-decoration: none;
     font-size: 1em;
-    color: #fefefe;
+    color: #cbf1f2;
 }
 
 .title > a:hover {
@@ -233,5 +233,5 @@ i:hover {
 .warning {
     font-size: 20px;
     color: white;
-    margin:15px;
+    margin: 15px;
 }

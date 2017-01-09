@@ -240,6 +240,10 @@
 	    }, {
 	        key: 'pageMove',
 	        value: function pageMove(e) {
+	            if (e.target.innerHTML > Math.ceil(main.result.number / main.getElementsOnPage())) {
+	                e.target.innerHTML = '-N-';
+	                return;
+	            }
 	            this.addResponce();
 	            this.pageManager.setCurrentPage(+e.target.innerHTML - 1);
 	            this.model.pageUpdate(this.pageManager.currentPage);
