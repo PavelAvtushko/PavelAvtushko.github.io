@@ -20,22 +20,3 @@ approprivate message is displayed. The application works on common mobile
 
 platforms.
 
-
-###Examples
-____
-
-**Normal window:**
-
-![Normal window](/img/Normal.png)  
-
-**Resize:**
-
-![Resize](/img/Resize.png)
-
-**Message:**
-
-![Message](/img/Message.png)
-
-**Mobile version:**
-
-![Mobile version](/img/Mobile.png)
