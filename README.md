@@ -26,16 +26,16 @@ ____
 
 **Normal window:**
 
-![Normal window](../img/Normal.png)  
+![Normal window](/img/Normal.png)  
 
 **Resize:**
 
-![Resize](../img/Resize.png)
+![Resize](/img/Resize.png)
 
 **Message:**
 
-![Message](../img/Message.png)
+![Message](/img/Message.png)
 
 **Mobile version:**
 
-![Mobile version](../img/Mobile.png)
+![Mobile version](/img/Mobile.png)
