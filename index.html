@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfoilio</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Angular</title>
+    </head>
+    <body ng-cloak>
     <div class="wrapper container">
         <header> 
             <img src="img/foto.png" alt="foto"/>
@@ -16,7 +14,7 @@
                 <h1>Pavel Avtushko<h1>
                 <h2>Junior Front-End developer<h2>
             </div>  
-            
+
             <address>
                 <ul class="contactData">
                     <li>
@@ -32,62 +30,17 @@
                         <a href="tel:+375295564703"> +37529 556-47-03</a>
                     </li>
                 </ul>
-            </address>                
+            </address>
         </header>
 
-        <nav class="clearfix">
-            <a href="">Portfolio</a>
-            <a href="">Personal Info</a>
-        </nav>
+        <app></app>
 
-        <main class="clearfix">
-            <a href="/CustomYouTube">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>CustomYouTube</p>
-            </a>
-            <a href="/SimpleGame">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>SimpleGame</p>
-            </a>
-            <a href="/FormsWithJQuery">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>FormsWithJQuery</p>
-            </a>
-            <a href="/Accessibility">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>Accessibility</p>
-            </a>
-            <a href="/Positioning">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>Positioning</p>
-            </a>
-            <a href="/FinalTaskHTML">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>FinalTaskHTML</p>
-            </a>
-            <a href="/SASS-framework">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>SASS-framework</p>
-            </a>
-            <a href="https://github.com/PavelAvtushko/Binary-search-tree/blob/master/index.js">
-                <img src="" alt="" />
-                <h4>Description</h4>
-                <p>Binary Search Tree</p>
-            </a>
-
-        </main>
         <footer>
             <a href="mailto:pavel.avtushko@gmail.com">pavel.avtushko@gmail.com</a>
             <a href="tel:+375295564703"> +37529 556-47-03</a>
         </footer>
     </div>
-</body>
+        
+    <script type="text/javascript" src="bundle.js"></script>
+    </body>
 </html>
-
