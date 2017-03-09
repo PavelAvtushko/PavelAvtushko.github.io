@@ -38022,22 +38022,9 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var COLUMNS = [{ id: 0, name: 'todo' }, { id: 1, name: 'in progress' }, { id: 2, name: 'test' }, { id: 3, name: 'done' }];
-
-	var AppController = function AppController($http) {
-	    var _this = this;
-
+	var AppController = function AppController() {
 	    _classCallCheck(this, AppController);
-
-	    this.columns = COLUMNS;
-	    this.data = [];
-	    $http.get(_constants.URL).then(function (obj) {
-	        return _this.data = obj.data;
-	    });
-	    console.log('AppController...');
 	};
-
-	AppController.$inject = ['$http'];
 
 	exports.default = AppController;
 
@@ -38427,11 +38414,7 @@
 	var homeComponent = {
 	    template: _homeTemplate2.default,
 	    controller: _home2.default,
-	    replace: true,
-	    bindings: {
-	        columns: '<',
-	        data: '='
-	    }
+	    replace: true
 	};
 
 	exports.default = homeComponent;
@@ -38449,73 +38432,18 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	   value: true
 	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _constants = __webpack_require__(10);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var HomeController = function () {
-	    function HomeController($http) {
-	        _classCallCheck(this, HomeController);
-
-	        this.$http = $http;
-	        this.columns;
-	        this.data;
-	        console.log('HomeController...');
-	    }
-
-	    _createClass(HomeController, [{
-	        key: '_moveTask',
-	        value: function _moveTask(task, direction) {
-	            direction ? task.status++ : task.status--;
-	            task.lastModifyDate = Date.now();
-	            this.$http.put(_constants.URL + task.id, task).then(function (obj) {
-	                return console.log(obj.status);
-	            });
-	            return;
-	        }
-	    }, {
-	        key: 'moveLeft',
-	        value: function moveLeft(task) {
-	            if (task.status > 0) {
-	                this._moveTask(task, false);
-	            }
-	            return;
-	        }
-	    }, {
-	        key: 'moveRight',
-	        value: function moveRight(task) {
-	            if (task.status < this.columns.length - 1) {
-	                this._moveTask(task, true);
-	            }
-	            return;
-	        }
-	    }, {
-	        key: 'deleteItem',
-	        value: function deleteItem(task) {
-	            var _this = this;
-
-	            this.$http.delete(_constants.URL + task.id).then(function (obj) {
-	                var index = _this.data.findIndex(function (item) {
-	                    return item.id === task.id;
-	                });
-	                _this.data.splice(index, 1);
-	                console.log(obj.status);
-	            });
-	            return;
-	        }
-	    }]);
-
-	    return HomeController;
-	}();
+	var HomeController = function HomeController() {
+	   _classCallCheck(this, HomeController);
+	};
 
 	;
-
-	HomeController.$inject = ['$http'];
 
 	exports.default = HomeController;
 
@@ -38554,7 +38482,7 @@
 
 
 	// module
-	exports.push([module.id, ".columns h2 {\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n    color: rgba(26, 44, 15, 0.97);\r\n    font-size: 15px;\r\n}\r\n\r\n.columns {\r\n    vertical-align: top;\r\n    width: 22%;\r\n    min-width: 100px;\r\n    background: #7ca39e;\r\n    float: left;\r\n    margin: 1.5%;\r\n}\r\n\r\n.columns .rows {\r\n    background: #ffffff;\r\n    margin: 5px 5px 20px 5px;\r\n    padding: 5px;\r\n    border-radius: 10px;\r\n    text-align: center;\r\n    min-width: 20%;\r\n    position: relative;\r\n}\r\n\r\n.deleteTask {\r\n    width: 25px;\r\n    height: 20px;\r\n    padding: 0;\r\n    margin: 0;\r\n    cursor: pointer;\r\n    float: right; \r\n    position: relative;\r\n}\r\n\r\n.deleteTask:after {\r\n    content: 'X';\r\n    font-size: 16px;\r\n    font-family: sans-serif;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n}\r\n\r\n.deleteTask:hover {\r\n    background: #7ca39e;\r\n    border-radius: 40%;\r\n}\r\n\r\n.rows textarea {\r\n    resize:none;\r\n    height: 40px;\r\n    width: 90%;\r\n}\r\n\r\n.columns > p {\r\n    margin: 0;\r\n    border-top: 2px grey solid;\r\n    padding: 10px;\r\n    text-align: left;\r\n    color: #ffffff;\r\n    font-family: sans-serif;\r\n}\r\n\r\n.taskName {\r\n    text-align: center;\r\n}\r\n\r\n.taskName span {\r\n    position: relative;\r\n}\r\n\r\n.taskName span:after {\r\n    content: \"\";\r\n    height: 0;\r\n    width: 0;\r\n    border-style: solid;\r\n    border-width: 8px;\r\n    border-color: transparent grey transparent transparent ;\r\n    position: absolute;\r\n    right: -20px;\r\n    top: 2px;\r\n}\r\n\r\n.taskName span:before {\r\n    content: \"\";\r\n    height: 0;\r\n    width: 0;\r\n    border-style: solid;\r\n    border-width: 8px;\r\n    border-color: transparent transparent transparent grey;\r\n    position: absolute;\r\n    left: -20px;\r\n    top: 2px;\r\n}", ""]);
+	exports.push([module.id, "", ""]);
 
 	// exports
 
