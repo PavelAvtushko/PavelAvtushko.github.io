@@ -69,7 +69,7 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _home = __webpack_require__(15);
+	var _home = __webpack_require__(16);
 
 	var _home2 = _interopRequireDefault(_home);
 
@@ -38175,7 +38175,7 @@
 /* 6 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class = \"person\">\r\n<ul>\r\n    <li>Pavel Avtushko</li>\r\n    <li><strong>EDUCATION</strong>\r\n        <ul>\r\n           <li>\r\n                <p><strong>BNTU</strong></p>\r\n                <p>Power Plant Construction and Engineering Services Faculty</p>\r\n                <p>Graduation year 2015</p>\r\n                <p>Degree PhD</p>                \r\n            </li>\r\n           <li>\r\n                <p><strong>BNTU</strong></p>\r\n                <p>Power Plant Construction and Engineering Services Faculty</p>\r\n                <p>Graduation year 2011</p>\r\n                <p>Degree master</p>                \r\n            </li>\r\n            <li>\r\n                <p><strong>BNTU</strong></p>\r\n                <p>Power Plant Construction and Engineering Services Faculty</p>\r\n                <p>Graduation year 2009</p>\r\n                <p>Degree specialist</p>                \r\n            </li>\r\n       </ul>\r\n\r\n\r\n\r\n    </li>\r\n    <li>BirthdayDate: 16.02.1987</li>\r\n    <li>Merital status: merried</li>\r\n    <li>English level: A2 (pre-Intermediate)</li>\r\n    <li><strong>WORK EXPERIENCE</strong>\r\n       <ul>\r\n           <li> \r\n                <p><strong>RUE \"Belnipienergoprom\"</strong></p>\r\n                <p>Head of sector</p>\r\n                <p>17.07.2009-09.03.2017</p>\r\n            </li>\r\n           <li>\r\n                <p><strong>Trest 15\"Spetsstroy\" JSC</strong></p>\r\n                <p>A worker of pipelines assembling</p>\r\n                <p>01.07.2008-15.08.2008</p>\r\n           </li>\r\n           <li>\r\n                <p><strong>Company name NP LLC \"Malaya Energetika\"</strong></p>\r\n                <p>Hydraulic engineer</p>\r\n                <p>05.01.2009-10.07.2009</p>\r\n           </li>\r\n       </ul>\r\n\r\n    </li>\r\n</ul>\r\n</div>\r\n\r\n";
+	module.exports = "<div class = \"person\">\r\n<ul>\r\n    <li><strong>Pavel Avtushko</strong></li>\r\n    <li><strong>EDUCATION</strong>\r\n        <ul>\r\n            <li>\r\n                <p><strong>THE ROLLING SCOPES SCHOOL</strong>\r\n                    <a href=\"https://school.rollingscopes.com/\"> link</a>\r\n                </p>\r\n                <p>10.2016 - 02.2017</p>\r\n            </li>\r\n            <li>\r\n                <p><strong>BNTU</strong></p>\r\n                <p>Power Plant Construction and Engineering Services Faculty</p>\r\n                <p>Graduation year 2015</p>\r\n                <p>Degree PhD</p>                \r\n            </li>\r\n            <li>\r\n                <p><strong>BNTU</strong></p>\r\n                <p>Power Plant Construction and Engineering Services Faculty</p>\r\n                <p>Graduation year 2011</p>\r\n                <p>Degree master</p>                \r\n            </li>\r\n            <li>\r\n                <p><strong>BNTU</strong></p>\r\n                <p>Power Plant Construction and Engineering Services Faculty</p>\r\n                <p>Graduation year 2009</p>\r\n                <p>Degree specialist</p>                \r\n            </li>\r\n       </ul>\r\n    </li>\r\n\r\n\r\n    <li>BirthdayDate: 16.02.1987</li>\r\n    <li>Merital status: merried</li>\r\n    <li>English level: A2 (pre-Intermediate)</li>\r\n    <li><strong>WORK EXPERIENCE</strong>\r\n       <ul>\r\n            <li>\r\n                <p><strong> EPAM JS-lab </strong><a href=\"https://www.epam.com/\"> link</a></p>\r\n                <p>since 02.2017</p>\r\n            </li>\r\n            <li> \r\n                <p><strong>RUE \"Belnipienergoprom\"</strong>\r\n                    <a href=\"http://belnipi.by/\"> link</a>\r\n                </p>\r\n                <p>Head of sector</p>\r\n                <p>since 17.07.2009</p>\r\n                \r\n            </li>\r\n            <li>\r\n                <p><strong>Trest 15\"Spetsstroy\" JSC</strong></p>\r\n                <p>A worker of pipelines assembling</p>\r\n                <p>01.07.2008-15.08.2008</p>\r\n            </li>\r\n            <li>\r\n                <p><strong>Company name NP LLC \"Malaya Energetika\"</strong></p>\r\n                <p>Hydraulic engineer</p>\r\n                <p>05.01.2009-10.07.2009</p>\r\n            </li>\r\n       </ul>\r\n\r\n    </li>\r\n</ul>\r\n</div>\r\n\r\n";
 
 /***/ },
 /* 7 */
@@ -38191,11 +38191,11 @@
 
 	var _appTemplate2 = _interopRequireDefault(_appTemplate);
 
-	var _app = __webpack_require__(9);
+	var _app = __webpack_require__(10);
 
 	var _app2 = _interopRequireDefault(_app);
 
-	__webpack_require__(11);
+	__webpack_require__(12);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38209,12 +38209,18 @@
 
 /***/ },
 /* 8 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<div>\r\n    <nav class=\"clearfix\">\r\n        <a ui-sref=\"Portfolio\">Portfolio</a>\r\n        <a ui-sref=\"Personal\">Personal Info</a>\r\n    </nav>\r\n    <ui-view></ui-view>\r\n</div>";
+	module.exports = " <div class=\"wrapper container\">\r\n        <header> \r\n            <img src=\"" + __webpack_require__(9) + "\" alt=\"foto\"/>\r\n            \r\n            <div>\r\n                <h1>Pavel Avtushko<h1>\r\n                <h2>JavaScript developer<h2>\r\n            </div>  \r\n\r\n            <address>\r\n                <ul class=\"contactData\">\r\n                    <li>\r\n                        <i class=\"fa fa-globe\" aria-hidden=\"true\"></i>\r\n                        <a href=\"mailto:pavel.avtushko@gmail.com\">{{'pavel.avtushko' + '@gmail.' + 'com'}}</a>\r\n                    </li>\r\n                    <li>\r\n                        <i class=\"fa fa-phone\" aria-hidden=\"true\"></i>\r\n                        <a href=\"tel:+375295564703\"> +37529 556-47-03</a>\r\n                    </li>\r\n                </ul>\r\n            </address>\r\n        </header>\r\n\r\n        <div>\r\n            <nav class=\"clearfix\">\r\n                <a ui-sref=\"Portfolio\">Portfolio</a>\r\n                <a ui-sref=\"Personal\">Personal Info</a>\r\n            </nav>\r\n            <ui-view></ui-view>\r\n        </div>\r\n\r\n        <footer>\r\n            <a href=\"mailto:pavel.avtushko@gmail.com\">pavel.avtushko@gmail.com</a>\r\n            <a href=\"tel:+375295564703\"> +37529 556-47-03</a>\r\n        </footer>\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n";
 
 /***/ },
 /* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "e579d28ee695fd0a586d5ee073f6b307.png";
+
+/***/ },
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38223,7 +38229,7 @@
 	    value: true
 	});
 
-	var _constants = __webpack_require__(10);
+	var _constants = __webpack_require__(11);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -38234,7 +38240,7 @@
 	exports.default = AppController;
 
 /***/ },
-/* 10 */
+/* 11 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -38247,16 +38253,16 @@
 	exports.URL = URL;
 
 /***/ },
-/* 11 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(12);
+	var content = __webpack_require__(13);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(14)(content, {});
+	var update = __webpack_require__(15)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -38273,21 +38279,21 @@
 	}
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(13)();
+	exports = module.exports = __webpack_require__(14)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "[ng-cloak],\r\n[data-ng-cloak],\r\n[x-ng-cloak],\r\n.ng-cloak,\r\n.x-ng-cloak {\r\n    display: none !important;\r\n}\r\n\r\n* {\r\n   margin: 0;\r\n   padding: 0;\r\n   font-family: 'Montserrat', 'Open Sans', 'Arial', sans-serif;\r\n}\r\n\r\nhtml, body {\r\n    height: 100%;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n}\r\n\r\nh1, h2, h3 {\r\n    font-size: 1.4rem;\r\n}\r\n\r\nh1 {\r\n    text-transform: uppercase;\r\n    letter-spacing: 2px;\r\n}\r\n\r\nli {\r\n    list-style-type: none;\r\n}\r\n\r\n.hidden {\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    overflow: hidden;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.wrapper {\r\n    width: 1024px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.container {\r\n    min-height: 100%;\r\n    position: relative;\r\n    padding-bottom: 100px;\r\n    box-sizing: border-box;\r\n    box-shadow: 0 0 20px rgba(0,0,0,0.5);\r\n    background: #eaf7f4;\r\n    color: white;\r\n}\r\n\r\n.clearfix::after {\r\n    content: '';\r\n    display: block;\r\n    width: 100%;\r\n    clear: both;;\r\n}\r\n\r\nheader {\r\n    background: #1655bc;\r\n    display: flex;\r\n    flex-direction:row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    cursor: default;\r\n}\r\n\r\nheader img {\r\n    height: 100px;\r\n    width: 100px;\r\n    border-radius: 50%;\r\n    margin: 20px;\r\n}\r\n\r\nheader address {\r\n    width: 50%;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n\r\na:hover {\r\n    color: #bacff2;\r\n}\r\n\r\nfooter {\r\n    background: #1655bc;\r\n    height: 100px;\r\n    position: absolute;\r\n    margin-top: -100px;\r\n    width: 100%;\r\n    bottom: 0;\r\n    left: 0;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n}\r\n\r\nnav > a {\r\n    float: left;\r\n    line-height: 50px;\r\n    padding: 0 20px;\r\n}\r\n\r\nnav > a:hover {\r\n    background: #2c3a51;\r\n}\r\n\r\nnav {\r\n    border-top: 1px white solid;\r\n    background: #1655bc;\r\n}\r\n\r\nmain > a {\r\n    width: 29%;\r\n    height: 300px;\r\n    overflow: hidden;\r\n    border: 5px solid #396cbf;\r\n    float: left;\r\n    margin: 2%;\r\n    box-shadow: 0 0 20px rgba(0,0,0,0.5);\r\n    box-sizing: border-box;\r\n    color: black;\r\n}\r\n\r\nmain > a h4 {\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n    margin: 10px;\r\n}\r\n\r\n\r\nmain > a p {\r\n    text-align: left;\r\n    margin: 10px;\r\n}\r\n\r\n\r\nmain > a:hover {\r\n    background: #5586d6;\r\n    color: white;\r\n}\r\n\r\n.person {\r\n    color: blue;\r\n}\r\n\r\n.person li{\r\n    padding: 10px;\r\n}\r\n\r\n.person > ul>li:not(:nth-child(1)){\r\n    border-top: 2px solid black;\r\n}", ""]);
+	exports.push([module.id, "[ng-cloak],\r\n[data-ng-cloak],\r\n[x-ng-cloak],\r\n.ng-cloak,\r\n.x-ng-cloak {\r\n    display: none !important;\r\n}\r\n\r\n* {\r\n   margin: 0;\r\n   padding: 0;\r\n   font-family: 'Montserrat', 'Open Sans', 'Arial', sans-serif;\r\n}\r\n\r\nhtml, body {\r\n    height: 100%;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n}\r\n\r\nh1, h2, h3 {\r\n    font-size: 1.4rem;\r\n}\r\n\r\nh1 {\r\n    text-transform: uppercase;\r\n    letter-spacing: 2px;\r\n}\r\n\r\nli {\r\n    list-style-type: none;\r\n}\r\n\r\n.hidden {\r\n    white-space: nowrap;\r\n    text-overflow: ellipsis;\r\n    overflow: hidden;\r\n    margin-bottom: 10px;\r\n}\r\n\r\n.wrapper {\r\n    width: 1024px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.container {\r\n    min-height: 100%;\r\n    position: relative;\r\n    padding-bottom: 100px;\r\n    box-sizing: border-box;\r\n    box-shadow: 0 0 20px rgba(0,0,0,0.5);\r\n    background: #eaf7f4;\r\n    color: white;\r\n}\r\n\r\n.clearfix::after {\r\n    content: '';\r\n    display: block;\r\n    width: 100%;\r\n    clear: both;;\r\n}\r\n\r\nheader {\r\n    background: #1655bc;\r\n    display: flex;\r\n    flex-direction:row;\r\n    align-items: center;\r\n    justify-content: space-between;\r\n    cursor: default;\r\n}\r\n\r\nheader img {\r\n    height: 100px;\r\n    width: 100px;\r\n    border-radius: 50%;\r\n    margin: 20px;\r\n}\r\n\r\nheader address {\r\n    width: 50%;\r\n}\r\n\r\na {\r\n    text-decoration: none;\r\n    color: #ffffff;\r\n}\r\n\r\na:hover {\r\n    color: #bacff2;\r\n}\r\n\r\nfooter {\r\n    background: #1655bc;\r\n    height: 100px;\r\n    position: absolute;\r\n    margin-top: -100px;\r\n    width: 100%;\r\n    bottom: 0;\r\n    left: 0;\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n}\r\n\r\nnav > a {\r\n    float: left;\r\n    line-height: 50px;\r\n    padding: 0 20px;\r\n}\r\n\r\nnav > a:hover {\r\n    background: #2c3a51;\r\n}\r\n\r\nnav {\r\n    border-top: 1px white solid;\r\n    background: #1655bc;\r\n}\r\n\r\nmain > a {\r\n    width: 29%;\r\n    height: 350px;\r\n    overflow: hidden;\r\n    border: 5px solid #396cbf;\r\n    float: left;\r\n    margin: 2%;\r\n    box-shadow: 0 0 20px rgba(0,0,0,0.5);\r\n    box-sizing: border-box;\r\n    color: black;\r\n}\r\n\r\nmain > a h4 {\r\n    text-align: center;\r\n    text-transform: uppercase;\r\n    margin: 10px;\r\n}\r\n\r\n\r\nmain > a p {\r\n    text-align: left;\r\n    margin: 10px;\r\n}\r\n\r\n\r\nmain > a:hover {\r\n    background: #5586d6;\r\n    color: white;\r\n}\r\n\r\n.person {\r\n    color: blue;\r\n}\r\n\r\n.person li{\r\n    padding: 10px;\r\n}\r\n\r\n.person > ul>li:not(:nth-child(1)){\r\n    border-top: 2px solid black;\r\n}\r\n\r\n.person a {\r\n    color: grey;\r\n    text-decoration: underline;\r\n}\r\n\r\n.person a:hover {\r\n    color: black;\r\n}", ""]);
 
 	// exports
 
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports) {
 
 	/*
@@ -38343,7 +38349,7 @@
 
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -38595,7 +38601,7 @@
 
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38604,15 +38610,15 @@
 	    value: true
 	});
 
-	var _homeTemplate = __webpack_require__(16);
+	var _homeTemplate = __webpack_require__(17);
 
 	var _homeTemplate2 = _interopRequireDefault(_homeTemplate);
 
-	var _home = __webpack_require__(24);
+	var _home = __webpack_require__(26);
 
 	var _home2 = _interopRequireDefault(_home);
 
-	__webpack_require__(25);
+	__webpack_require__(27);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -38625,55 +38631,61 @@
 	exports.default = homeComponent;
 
 /***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = "<main class=\"clearfix cards\">\r\n    <a href=\"/CustomYouTube\">\r\n        <img src=\"" + __webpack_require__(17) + "\" alt=\"YouTube\">\r\n        <h4>Custom YouTube</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"/SimpleGame\">\r\n        <img src=\"" + __webpack_require__(18) + "\" alt=\"Game\">\r\n        <h4>Simple Game</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"/FormsWithJQuery\">\r\n        <img src=\"" + __webpack_require__(19) + "\" alt=\"Jquery\">\r\n        <h4>Forms with JQuery</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"/Accessibility\">\r\n        <img src=\"" + __webpack_require__(20) + "\" alt=\"Accessibility\">\r\n        <h4>Accessibility</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"/FinalTaskHTML\">\r\n        <img src=\"" + __webpack_require__(21) + "\" alt=\"FinalTaskHTML\">\r\n        <h4>Final HTML Task</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"/SASS-framework\">\r\n        <img src=\"" + __webpack_require__(22) + "\" alt=\"framework\">\r\n        <h4>Bootstrap</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"https://github.com/PavelAvtushko/Binary-search-tree/blob/master/index.js\">\r\n        <h4>Binary Search Tree</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"/Responsive-design\">\r\n        <img src=\"" + __webpack_require__(23) + "\" alt=\"rwd\">\r\n        <h4>Responsive-design</h4>\r\n        <p>Description</p>\r\n    </a>\r\n    <a href=\"https://github.com/PavelAvtushko/Custom-JQuery/blob/master/index.js\">\r\n        <h4>Custom Jquery</h4>\r\n        <p>Description</p>\r\n    </a>\r\n\r\n</main>\r\n";
-
-/***/ },
 /* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "8c42968f7e8f47e4145e60de23f66a3e.jpg";
+	module.exports = "<main class=\"clearfix cards\">\r\n    <a href=\"/CustomYouTube\">\r\n        <img src=\"" + __webpack_require__(18) + "\" alt=\"YouTube\">\r\n        <h4>Custom YouTube</h4>\r\n        <ul>\r\n            <li>Vanilla JS</li>\r\n            <li>HTML5, CSS3</li>\r\n            <li>Google API Key</li>\r\n            <li>Animation</li>\r\n            <li>Responsive design</li>\r\n            <li>AJAX</li>\r\n            <li>Webpack</li>\r\n        </ul>\r\n    </a>\r\n\r\n    <a href=\"/SimpleGame\">\r\n        <img src=\"" + __webpack_require__(19) + "\" alt=\"Game\">\r\n        <h4>Simple Game</h4>\r\n        <ul>\r\n            <li>Vanilla JS</li>\r\n            <li>ES6 syntax</li>\r\n            <li>HTML5, CSS3</li>\r\n            <li>Canvas</li>\r\n            <li>Animation</li>\r\n            <li>Sprites</li>\r\n        </ul>\r\n    </a>\r\n\r\n\r\n    <a href=\"https://github.com/PavelAvtushko/WunderList\">\r\n        <img src=\"" + __webpack_require__(20) + "\" alt=\"Angular\">\r\n        <h4>WunderList (local)</h4>\r\n        <ul>\r\n            <li>Mongodb</li>\r\n            <li>Express</li>\r\n            <li>Angular 1</li>\r\n            <li>Node.js</li>\r\n            <li>ES6 syntax</li>\r\n            <li>Bootstrap</li>\r\n            <li>HTML5, CSS3</li>\r\n            <li>Webpack</li>\r\n        </ul>\r\n    </a>\r\n\r\n    <a href=\"/FormsWithJQuery\">\r\n        <img src=\"" + __webpack_require__(21) + "\" alt=\"Jquery\">\r\n        <h4>JQuery Task</h4>\r\n        <ul>\r\n            <li>HTML5, CSS3</li>\r\n            <li>Canvas</li>\r\n            <li>JQuery</li>\r\n        </ul>\r\n    </a>\r\n\r\n    <a href=\"/FinalTaskHTML\">\r\n        <img src=\"" + __webpack_require__(22) + "\" alt=\"FinalTaskHTML\">\r\n        <h4>Final HTML Task</h4>\r\n        <ul>\r\n            <li>HTML5, CSS3</li>\r\n            <li>Font-awesome</li>\r\n            <li>PhotoShop</li>\r\n            <li>Custom sprites</li>\r\n        </ul>\r\n    </a>\r\n\r\n    <a href=\"/SASS-framework\">\r\n        <img src=\"" + __webpack_require__(23) + "\" alt=\"framework\">\r\n        <h4>Bootstrap</h4>\r\n        <ul>\r\n            <li>HTML5</li>\r\n            <li>Bootstrap</li>\r\n            <li>SASS</li>\r\n            <li>PhotoShop</li>\r\n        </ul>\r\n    </a>\r\n\r\n    <a href=\"https://github.com/PavelAvtushko/Binary-search-tree/blob/master/index.js\">\r\n        <img src=\"" + __webpack_require__(24) + "\" alt=\"BST\">\r\n        <h4>Binary Search Tree</h4>\r\n        <ul>\r\n            <li>Vanilla JS</li>\r\n            <li>ES5 syntax</li>\r\n        </ul>\r\n    </a>\r\n\r\n    <a href=\"/Responsive-design\">\r\n        <img src=\"" + __webpack_require__(25) + "\" alt=\"rwd\">\r\n        <h4>Responsive Design</h4>\r\n            <li>HTML5, CSS3</li>\r\n            <li>Flexbox</li>\r\n            <li>PhotoShop</li>\r\n    </a>\r\n\r\n    <a href=\"https://github.com/PavelAvtushko/Custom-JQuery/blob/master/index.js\">\r\n        <img src=\"" + __webpack_require__(24) + "\" alt=\"BST\">\r\n        <h4>Custom Jquery</h4>\r\n        <ul>\r\n            <li>Vanilla JS</li>\r\n            <li>ES6 syntax</li>\r\n            <li>Module pattern</li>\r\n        </ul>\r\n    </a>\r\n\r\n</main>\r\n";
 
 /***/ },
 /* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "8e8d8404ddd4cf784cecee8bc6c605bd.jpg";
+	module.exports = __webpack_require__.p + "8c42968f7e8f47e4145e60de23f66a3e.jpg";
 
 /***/ },
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "0d891d1f5d78b00e234bd4eb4acd71c9.jpg";
+	module.exports = __webpack_require__.p + "8e8d8404ddd4cf784cecee8bc6c605bd.jpg";
 
 /***/ },
 /* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "2a7bc228ca8f7d3d3c9eaad9bb63c515.png";
+	module.exports = __webpack_require__.p + "e166f69cbe75535a7787d4a05a920ae5.jpg";
 
 /***/ },
 /* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "ad7a341c1f1f74b011e3ab2f2a0f4c7a.jpg";
+	module.exports = __webpack_require__.p + "0d891d1f5d78b00e234bd4eb4acd71c9.jpg";
 
 /***/ },
 /* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "c332649df73de2a87a9b000e73e6222a.jpg";
+	module.exports = __webpack_require__.p + "ad7a341c1f1f74b011e3ab2f2a0f4c7a.jpg";
 
 /***/ },
 /* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "c34f3bf64fd150fb766c1a05857776b1.jpg";
+	module.exports = __webpack_require__.p + "c332649df73de2a87a9b000e73e6222a.jpg";
 
 /***/ },
 /* 24 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "5e10bf063360494dc71fe6b5bf21744a.jpg";
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c34f3bf64fd150fb766c1a05857776b1.jpg";
+
+/***/ },
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38682,7 +38694,7 @@
 	    value: true
 	});
 
-	var _constants = __webpack_require__(10);
+	var _constants = __webpack_require__(11);
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -38695,16 +38707,16 @@
 	exports.default = HomeController;
 
 /***/ },
-/* 25 */
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(26);
+	var content = __webpack_require__(28);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(14)(content, {});
+	var update = __webpack_require__(15)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -38721,15 +38733,15 @@
 	}
 
 /***/ },
-/* 26 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(13)();
+	exports = module.exports = __webpack_require__(14)();
 	// imports
 
 
 	// module
-	exports.push([module.id, ".cards img {\r\n    height: 150px;\r\n    border: 2px grey solid;\r\n}\r\n\r\n.cards>a {\r\n    text-align: center;\r\n    padding-top: 20px;\r\n}\r\n", ""]);
+	exports.push([module.id, ".cards img {\r\n    height: 120px;\r\n    border: 2px grey solid;\r\n}\r\n\r\n.cards>a {\r\n    text-align: center;\r\n    padding-top: 20px;\r\n}\r\n\r\n.cards li {\r\n    text-align: left;\r\n    margin-left: 20px;\r\n}\r\n\r\n", ""]);
 
 	// exports
 
